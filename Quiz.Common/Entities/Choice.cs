@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Quiz.Common.Entities
+{
+    public class Choice
+    {
+        public int ChoiceId { get; set; }
+        public string Answer { get; set; }
+        public bool IsCorrect { get; set; }
+        public virtual Question Question { get; set; }
+    }
+}
