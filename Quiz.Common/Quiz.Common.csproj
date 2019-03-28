@@ -40,10 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Choice.cs" />
-    <Compile Include="Entities\Question.cs" />
-    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Data\Choice.cs" />
+    <Compile Include="Entities\Data\Question.cs" />
+    <Compile Include="Entities\Data\User.cs" />
+    <Compile Include="Entities\IoC\IIocContainer.cs" />
+    <Compile Include="Exceptions\AuthException.cs" />
+    <Compile Include="Exceptions\QuizException.cs" />
+    <Compile Include="Exceptions\UserAlreadyExistsException.cs" />
+    <Compile Include="Managers\IAuthManager.cs" />
+    <Compile Include="Managers\IQuizManager.cs" />
+    <Compile Include="Managers\IUserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\IIocProvider.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
